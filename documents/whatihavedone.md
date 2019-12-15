@@ -41,3 +41,11 @@ $ bundle exec rails g controller Top index
       invoke    scss
       create      app/assets/stylesheets/top.scss
 ```
+
+Project
+
+```shell script
+$ bundle exec rails g migration EnablePgcryptoExtensionForUuid
+      invoke  active_record
+      create    db/migrate/20191215120650_enable_pgcrypto_extension_for_uuid.rb
+```
