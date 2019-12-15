@@ -22,4 +22,6 @@ $ bundle install
 $ bundle update
 
 $ yarn upgrade
+
+$ bundle exec rails db:create db:migrate
 ```
