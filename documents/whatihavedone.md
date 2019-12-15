@@ -17,4 +17,7 @@ $ rails new . -d postgresql --skip-test --skip-bundle
 
 $ git submodule add https://github.com/ha4gu/docker-rails-commons submodules/commons
 $ rsync -av submodules/commons/. ./. --exclude ".git"
+
+$ bundle install
+$ bundle update
 ```
