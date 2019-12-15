@@ -48,4 +48,8 @@ Project
 $ bundle exec rails g migration EnablePgcryptoExtensionForUuid
       invoke  active_record
       create    db/migrate/20191215120650_enable_pgcrypto_extension_for_uuid.rb
+$ bundle exec rails g model Project name:string description:text
+      invoke  active_record
+      create    db/migrate/20191215121705_create_projects.rb
+      create    app/models/project.rb
 ```
