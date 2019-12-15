@@ -1,0 +1,3 @@
+[submodule "submodules/commons"]
+	path = submodules/commons
+	url = https://github.com/ha4gu/docker-rails-commons
