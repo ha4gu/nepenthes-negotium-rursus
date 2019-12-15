@@ -20,4 +20,6 @@ $ rsync -av submodules/commons/. ./. --exclude ".git"
 
 $ bundle install
 $ bundle update
+
+$ yarn upgrade
 ```
