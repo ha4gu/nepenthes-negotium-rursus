@@ -1,0 +1,6 @@
+#!/usr/bin/env bash
+
+set -eu
+
+git submodule update --remote submodules/commons/
+rsync -av submodules/commons/. ./. --exclude ".git"

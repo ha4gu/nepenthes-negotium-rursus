@@ -41,3 +41,38 @@ $ bundle exec rails g controller Top index
       invoke    scss
       create      app/assets/stylesheets/top.scss
 ```
+
+Project
+
+```shell script
+$ bundle exec rails g migration EnablePgcryptoExtensionForUuid
+      invoke  active_record
+      create    db/migrate/20191215120650_enable_pgcrypto_extension_for_uuid.rb
+$ bundle exec rails g model Project name:string description:text
+      invoke  active_record
+      create    db/migrate/20191215121705_create_projects.rb
+      create    app/models/project.rb
+```
+
+RSpec（とりあえず現時点ではmodel specが動くところまで。）
+
+```shell script
+$ bundle exec rails g rspec:install
+      create  .rspec
+      create  spec
+      create  spec/spec_helper.rb
+      create  spec/rails_helper.rb
+$ bundle exec rails g rspec:model project
+      create  spec/models/project_spec.rb
+```
+
+Annotate
+
+```shell script
+$ bundle exec rails g annotate:install
+      create  lib/tasks/auto_annotate_models.rake
+$ bundle exec rake annotate_models
+Annotated (2): app/models/project.rb, spec/models/project_spec.rb
+$ bundle exec rake annotate_routes
+config/routes.rb annotated.
+```
