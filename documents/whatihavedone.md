@@ -25,3 +25,19 @@ $ yarn upgrade
 
 $ bundle exec rails db:create db:migrate
 ```
+
+Top
+
+```shell script
+$ bundle exec rails g controller Top index
+      create  app/controllers/top_controller.rb
+       route  get 'top/index'
+      invoke  erb
+      create    app/views/top
+      create    app/views/top/index.html.erb
+      invoke  helper
+      create    app/helpers/top_helper.rb
+      invoke  assets
+      invoke    scss
+      create      app/assets/stylesheets/top.scss
+```
