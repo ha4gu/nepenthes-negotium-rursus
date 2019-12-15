@@ -7,4 +7,6 @@ $ git init
 $ git commit --allow-empty
 
 $ mkdir documents
+
+$ rbenv local 2.6.5
 ```
