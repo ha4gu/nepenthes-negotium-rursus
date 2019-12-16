@@ -76,3 +76,12 @@ Annotated (2): app/models/project.rb, spec/models/project_spec.rb
 $ bundle exec rake annotate_routes
 config/routes.rb annotated.
 ```
+
+RailsAdmin
+
+```shell script
+$ bundle exec rails g rails_admin:install
+           ?  Where do you want to mount rails_admin? Press <enter> for [admin] >
+       route  mount RailsAdmin::Engine => '/admin', as: 'rails_admin'
+      create  config/initializers/rails_admin.rb
+```

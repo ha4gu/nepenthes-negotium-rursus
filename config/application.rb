@@ -31,5 +31,11 @@ module NepenthesNegotiumRursus
 
     # Don't generate system test files.
     config.generators.system_tests = nil
+
+    # Set JST as the default timezone of Rails
+    config.time_zone = "Asia/Tokyo"
+
+    # Set UTC as the default timezone of ActiveRecord for data stored in DB
+    config.active_record.default_timezone = :utc
   end
 end
