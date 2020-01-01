@@ -1,7 +1,7 @@
 source "https://rubygems.org"
 git_source(:github) { |repo| "https://github.com/#{repo}.git" }
 
-ruby "2.6.5"
+ruby "2.7.0"
 
 gem "bootsnap", ">= 1.4.2", require: false
 gem "image_processing", "~> 1.2"
@@ -11,7 +11,7 @@ gem "rails", "~> 6.0.2"
 gem "rails-i18n", "~> 6.0.0"
 gem "rails_admin", "~> 2.0"
 gem "sassc-rails"
-gem "sprockets", "< 4.0.0"
+gem "sprockets"
 gem "turbolinks", "~> 5"
 gem "webpacker", "~> 4.0"
 
