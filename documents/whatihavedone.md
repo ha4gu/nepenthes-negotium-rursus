@@ -85,3 +85,16 @@ $ bundle exec rails g rails_admin:install
        route  mount RailsAdmin::Engine => '/admin', as: 'rails_admin'
       create  config/initializers/rails_admin.rb
 ```
+
+Task
+
+```shell script
+$ bundle exec rails g model Task project:references title:string detail:text deadline_at:datetime status:integer priority:integer position:integer
+      invoke  active_record
+      create    db/migrate/20191219132352_create_tasks.rb
+      create    app/models/task.rb
+      invoke    rspec
+      create      spec/models/task_spec.rb
+      invoke      factory_bot
+      create        spec/factories/tasks.rb
+```
