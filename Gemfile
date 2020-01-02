@@ -3,6 +3,7 @@ git_source(:github) { |repo| "https://github.com/#{repo}.git" }
 
 ruby "2.7.0"
 
+gem "acts_as_list"
 gem "bootsnap", ">= 1.4.2", require: false
 gem "image_processing", "~> 1.2"
 gem "pg", ">= 0.18", "< 2.0"
